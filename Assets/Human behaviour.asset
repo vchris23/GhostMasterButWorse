@@ -1,0 +1,704 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b93118c0574eb542824b91809a335f6, type: 3}
+  m_Name: Human behaviour
+  m_EditorClassIdentifier: 
+  stateSets:
+  - states:
+    - preconditions:
+      - designation: Precondition 1
+        considerationDesignation: Technicalities | Toilet
+        comparator: 0
+        value: 0
+      evaluators:
+      - designation: Evaluator 1
+        considerationDesignation: Human needs | Toilet
+        weight: 1
+        curve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0.31953734
+            tangentMode: 5
+            weightedMode: 2
+            inWeight: 0
+            outWeight: 0.6888889
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 2
+            outSlope: 2
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        curveMinValue: 0
+        curveMaxValue: 100
+      behaviourTree:
+        rootNode:
+          rid: 4608573912371167270
+      active: 1
+      designation: Toilet
+      weight: 1
+      executionFactor: 1
+      baseScore: 0
+      setMinScore: 0
+      minScore: 0
+      setMaxScore: 0
+      maxScore: 0
+      failChance: 0
+      notes: 
+    - preconditions:
+      - designation: Precondition 1
+        considerationDesignation: Technicalities | Bed
+        comparator: 0
+        value: 0
+      evaluators:
+      - designation: Evaluator 1
+        considerationDesignation: Human needs | Sleep
+        weight: 1
+        curve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 1
+            outSlope: 1
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 1
+            outSlope: 1
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        curveMinValue: 0
+        curveMaxValue: 100
+      behaviourTree:
+        rootNode:
+          rid: 4608573912371167271
+      active: 1
+      designation: Sleep
+      weight: 1
+      executionFactor: 10
+      baseScore: 0
+      setMinScore: 0
+      minScore: 0
+      setMaxScore: 0
+      maxScore: 0
+      failChance: 0
+      notes: 
+    - preconditions:
+      - designation: Precondition 1
+        considerationDesignation: Technicalities | FoodSource
+        comparator: 0
+        value: 0
+      evaluators:
+      - designation: Evaluator 1
+        considerationDesignation: Human needs | Food
+        weight: 1
+        curve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 1
+            outSlope: 1
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 1
+            outSlope: 1
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        curveMinValue: 0
+        curveMaxValue: 100
+      behaviourTree:
+        rootNode:
+          rid: 4608573912371167272
+      active: 1
+      designation: Eat
+      weight: 1
+      executionFactor: 5
+      baseScore: 0
+      setMinScore: 0
+      minScore: 0
+      setMaxScore: 0
+      maxScore: 0
+      failChance: 0
+      notes: 
+    - preconditions:
+      - designation: Precondition 1
+        considerationDesignation: Technicalities | Bath
+        comparator: 0
+        value: 0
+      evaluators:
+      - designation: Evaluator 1
+        considerationDesignation: Human needs | Hygiene
+        weight: 1
+        curve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0.19776757
+            outSlope: 0.19776757
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0.18055557
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 2.1365156
+            outSlope: 2.1365156
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0.061111093
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        curveMinValue: 0
+        curveMaxValue: 100
+      behaviourTree:
+        rootNode:
+          rid: 4608573912371167273
+      active: 1
+      designation: Bathe
+      weight: 1
+      executionFactor: 10
+      baseScore: 0
+      setMinScore: 0
+      minScore: 0
+      setMaxScore: 0
+      maxScore: 0
+      failChance: 0
+      notes: 
+    - preconditions:
+      - designation: Precondition 1
+        considerationDesignation: Technicalities | Entertainment
+        comparator: 0
+        value: 0
+      evaluators: []
+      behaviourTree:
+        rootNode:
+          rid: 4608573912371167274
+      active: 1
+      designation: Entertain
+      weight: 1
+      executionFactor: 1
+      baseScore: 0.035
+      setMinScore: 0
+      minScore: 0
+      setMaxScore: 0
+      maxScore: 0
+      failChance: 0
+      notes: 
+    - preconditions:
+      - designation: Precondition 1
+        considerationDesignation: Human needs | Terror
+        comparator: 2
+        value: 100
+      evaluators: []
+      behaviourTree:
+        rootNode:
+          rid: 4608573912371167275
+      active: 1
+      designation: Run out of level
+      weight: 1
+      executionFactor: 1
+      baseScore: 1000
+      setMinScore: 0
+      minScore: 0
+      setMaxScore: 0
+      maxScore: 0
+      failChance: 0
+      notes: 
+    designation: State Set 1
+  - states: []
+    designation: State Set 1
+  - states: []
+    designation: State Set 1
+  considerationSets:
+  - {fileID: 11400000, guid: 2318d6187262f0f4fa0767f99b4f46be, type: 2}
+  - {fileID: 11400000, guid: 368f9c532a1bcc14ebab8eedaed6fbe0, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 4608573912371167270
+      type: {class: Root, ns: KadaXuanwu.UtilityDesigner.Scripts.Execution.Runtime,
+        asm: UtilityDesigner}
+      data:
+        guid: f73f659c46b073a479a521ae5f9208be
+        position: {x: 401.99985, y: 12.681833}
+        notes: 
+        child:
+          rid: 4608573912371167276
+    - rid: 4608573912371167271
+      type: {class: Root, ns: KadaXuanwu.UtilityDesigner.Scripts.Execution.Runtime,
+        asm: UtilityDesigner}
+      data:
+        guid: f73f659c46b073a479a521ae5f9208be
+        position: {x: 375, y: 10}
+        notes: 
+        child:
+          rid: 4608573912371167277
+    - rid: 4608573912371167272
+      type: {class: Root, ns: KadaXuanwu.UtilityDesigner.Scripts.Execution.Runtime,
+        asm: UtilityDesigner}
+      data:
+        guid: f73f659c46b073a479a521ae5f9208be
+        position: {x: 374.6666, y: 17.306656}
+        notes: 
+        child:
+          rid: 4608573912371167278
+    - rid: 4608573912371167273
+      type: {class: Root, ns: KadaXuanwu.UtilityDesigner.Scripts.Execution.Runtime,
+        asm: UtilityDesigner}
+      data:
+        guid: f73f659c46b073a479a521ae5f9208be
+        position: {x: 375, y: 10}
+        notes: 
+        child:
+          rid: 4608573912371167279
+    - rid: 4608573912371167274
+      type: {class: Root, ns: KadaXuanwu.UtilityDesigner.Scripts.Execution.Runtime,
+        asm: UtilityDesigner}
+      data:
+        guid: f73f659c46b073a479a521ae5f9208be
+        position: {x: 375, y: 10}
+        notes: 
+        child:
+          rid: 4608573912371167280
+    - rid: 4608573912371167275
+      type: {class: Root, ns: KadaXuanwu.UtilityDesigner.Scripts.Execution.Runtime,
+        asm: UtilityDesigner}
+      data:
+        guid: 3fdbd27f9e44982489ed53abc81566d6
+        position: {x: 375.33328, y: -69.973335}
+        notes: 
+        child:
+          rid: 4608573912371167281
+    - rid: 4608573912371167276
+      type: {class: Sequence, ns: KadaXuanwu.UtilityDesigner.Scripts.Execution.Composites,
+        asm: UtilityDesigner}
+      data:
+        guid: 12b0ca8b900ce064c8b4983e2752b0ab
+        position: {x: 401.99997, y: 117.333336}
+        notes: 
+        children:
+        - rid: 4608573912371167282
+        - rid: 4608573912371167283
+        - rid: 4608573912371167284
+        - rid: 4608573912371167285
+    - rid: 4608573912371167277
+      type: {class: Sequence, ns: KadaXuanwu.UtilityDesigner.Scripts.Execution.Composites,
+        asm: UtilityDesigner}
+      data:
+        guid: 12b0ca8b900ce064c8b4983e2752b0ab
+        position: {x: 374.6666, y: 116.00003}
+        notes: 
+        children:
+        - rid: 4608573912371167286
+        - rid: 4608573912371167287
+        - rid: 4608573912371167288
+    - rid: 4608573912371167278
+      type: {class: Sequence, ns: KadaXuanwu.UtilityDesigner.Scripts.Execution.Composites,
+        asm: UtilityDesigner}
+      data:
+        guid: 12b0ca8b900ce064c8b4983e2752b0ab
+        position: {x: 374.6666, y: 116.00003}
+        notes: 
+        children:
+        - rid: 4608573912371167289
+        - rid: 4608573912371167290
+        - rid: 4608573912371167291
+        - rid: 4608573912371167292
+    - rid: 4608573912371167279
+      type: {class: Sequence, ns: KadaXuanwu.UtilityDesigner.Scripts.Execution.Composites,
+        asm: UtilityDesigner}
+      data:
+        guid: 12b0ca8b900ce064c8b4983e2752b0ab
+        position: {x: 374.6666, y: 116.00003}
+        notes: 
+        children:
+        - rid: 4608573912371167293
+        - rid: 4608573912371167294
+        - rid: 4608573912371167295
+    - rid: 4608573912371167280
+      type: {class: Sequence, ns: KadaXuanwu.UtilityDesigner.Scripts.Execution.Composites,
+        asm: UtilityDesigner}
+      data:
+        guid: 12b0ca8b900ce064c8b4983e2752b0ab
+        position: {x: 374.6666, y: 116.00003}
+        notes: 
+        children:
+        - rid: 4608573912371167296
+        - rid: 4608573912371167297
+        - rid: 4608573912371167298
+    - rid: 4608573912371167281
+      type: {class: Sequence, ns: KadaXuanwu.UtilityDesigner.Scripts.Execution.Composites,
+        asm: UtilityDesigner}
+      data:
+        guid: 30d6c9347a255d942b8a1860a09bf3f0
+        position: {x: 359.33337, y: 20.053345}
+        notes: 
+        children:
+        - rid: 4608573912371167299
+        - rid: 4608573912371167300
+    - rid: 4608573912371167282
+      type: {class: FindEntityOfType, ns: , asm: Assembly-CSharp}
+      data:
+        guid: edf33a7fe76ce8b43828fc6eadb5d59c
+        position: {x: -173.67996, y: 238.66666}
+        notes: 
+        typeToFind: 0
+    - rid: 4608573912371167283
+      type: {class: MoveToTarget, ns: , asm: Assembly-CSharp}
+      data:
+        guid: 6e831f713a9e658449626106245e7ce3
+        position: {x: 10.0000305, y: 238.66666}
+        notes: 
+    - rid: 4608573912371167284
+      type: {class: LockState, ns: KadaXuanwu.UtilityDesigner.Scripts.Execution.Actions,
+        asm: UtilityDesigner}
+      data:
+        guid: 5539acf739f562b48b3060cb36477ba7
+        position: {x: 224.66663, y: 238.66666}
+        notes: 
+    - rid: 4608573912371167285
+      type: {class: Repeat, ns: KadaXuanwu.UtilityDesigner.Scripts.Execution.Decorators,
+        asm: UtilityDesigner}
+      data:
+        guid: 92c757787954036418503d4a45b816ee
+        position: {x: 424.66666, y: 238.66666}
+        notes: 
+        child:
+          rid: 4608573912371167301
+    - rid: 4608573912371167286
+      type: {class: FindEntityOfType, ns: , asm: Assembly-CSharp}
+      data:
+        guid: edf33a7fe76ce8b43828fc6eadb5d59c
+        position: {x: 42.613342, y: 238.66666}
+        notes: 
+        typeToFind: 1
+    - rid: 4608573912371167287
+      type: {class: MoveToTarget, ns: , asm: Assembly-CSharp}
+      data:
+        guid: 6e831f713a9e658449626106245e7ce3
+        position: {x: 224.66672, y: 229.33331}
+        notes: 
+    - rid: 4608573912371167288
+      type: {class: Repeat, ns: KadaXuanwu.UtilityDesigner.Scripts.Execution.Decorators,
+        asm: UtilityDesigner}
+      data:
+        guid: 92c757787954036418503d4a45b816ee
+        position: {x: 424.66666, y: 238.66666}
+        notes: 
+        child:
+          rid: 4608573912371167302
+    - rid: 4608573912371167289
+      type: {class: DebugLog, ns: KadaXuanwu.UtilityDesigner.Scripts.Execution.Actions,
+        asm: UtilityDesigner}
+      data:
+        guid: 43a43f92f5bcd7546a379dff5f07c58d
+        position: {x: -125.41333, y: 238.66667}
+        notes: 
+        message: STARTING EAT
+    - rid: 4608573912371167290
+      type: {class: FindEntityOfType, ns: , asm: Assembly-CSharp}
+      data:
+        guid: edf33a7fe76ce8b43828fc6eadb5d59c
+        position: {x: 42.613342, y: 238.66666}
+        notes: 
+        typeToFind: 3
+    - rid: 4608573912371167291
+      type: {class: MoveToTarget, ns: , asm: Assembly-CSharp}
+      data:
+        guid: 6e831f713a9e658449626106245e7ce3
+        position: {x: 224.66672, y: 229.33331}
+        notes: 
+    - rid: 4608573912371167292
+      type: {class: Repeat, ns: KadaXuanwu.UtilityDesigner.Scripts.Execution.Decorators,
+        asm: UtilityDesigner}
+      data:
+        guid: 92c757787954036418503d4a45b816ee
+        position: {x: 424.66666, y: 238.66666}
+        notes: 
+        child:
+          rid: 4608573912371167303
+    - rid: 4608573912371167293
+      type: {class: FindEntityOfType, ns: , asm: Assembly-CSharp}
+      data:
+        guid: edf33a7fe76ce8b43828fc6eadb5d59c
+        position: {x: 42.613342, y: 238.66666}
+        notes: 
+        typeToFind: 4
+    - rid: 4608573912371167294
+      type: {class: MoveToTarget, ns: , asm: Assembly-CSharp}
+      data:
+        guid: 6e831f713a9e658449626106245e7ce3
+        position: {x: 224.66672, y: 229.33331}
+        notes: 
+    - rid: 4608573912371167295
+      type: {class: Repeat, ns: KadaXuanwu.UtilityDesigner.Scripts.Execution.Decorators,
+        asm: UtilityDesigner}
+      data:
+        guid: 92c757787954036418503d4a45b816ee
+        position: {x: 424.66666, y: 238.66666}
+        notes: 
+        child:
+          rid: 4608573912371167304
+    - rid: 4608573912371167296
+      type: {class: FindEntityOfType, ns: , asm: Assembly-CSharp}
+      data:
+        guid: edf33a7fe76ce8b43828fc6eadb5d59c
+        position: {x: 42.613342, y: 238.66666}
+        notes: 
+        typeToFind: 5
+    - rid: 4608573912371167297
+      type: {class: MoveToTarget, ns: , asm: Assembly-CSharp}
+      data:
+        guid: 6e831f713a9e658449626106245e7ce3
+        position: {x: 224.66672, y: 229.33331}
+        notes: 
+    - rid: 4608573912371167298
+      type: {class: Repeat, ns: KadaXuanwu.UtilityDesigner.Scripts.Execution.Decorators,
+        asm: UtilityDesigner}
+      data:
+        guid: 92c757787954036418503d4a45b816ee
+        position: {x: 424.66666, y: 238.66666}
+        notes: 
+        child:
+          rid: 4608573912371167305
+    - rid: 4608573912371167299
+      type: {class: LockState, ns: KadaXuanwu.UtilityDesigner.Scripts.Execution.Actions,
+        asm: UtilityDesigner}
+      data:
+        guid: 78b39bc24dee558439eb791019d93b5f
+        position: {x: 98, y: 155.33334}
+        notes: 
+    - rid: 4608573912371167300
+      type: {class: MoveToTransform, ns: KadaXuanwu.UtilityDesigner.Scripts.Execution.Actions,
+        asm: UtilityDesigner}
+      data:
+        guid: bb852f51280215845a27586f493049be
+        position: {x: 307.99997, y: 155.33333}
+        notes: 
+        _locationIndex: 0
+        setSpeed: 1
+        speed: 20
+        setStoppingDistance: 0
+        stoppingDistance: 0
+    - rid: 4608573912371167301
+      type: {class: Sequence, ns: KadaXuanwu.UtilityDesigner.Scripts.Execution.Composites,
+        asm: UtilityDesigner}
+      data:
+        guid: d0dee92ef3033404982a43cfbee70624
+        position: {x: 424.66666, y: 338.66663}
+        notes: 
+        children:
+        - rid: 4608573912371167306
+        - rid: 4608573912371167307
+    - rid: 4608573912371167302
+      type: {class: Sequence, ns: KadaXuanwu.UtilityDesigner.Scripts.Execution.Composites,
+        asm: UtilityDesigner}
+      data:
+        guid: d0dee92ef3033404982a43cfbee70624
+        position: {x: 424.66666, y: 338.66663}
+        notes: 
+        children:
+        - rid: 4608573912371167308
+        - rid: 4608573912371167309
+    - rid: 4608573912371167303
+      type: {class: Sequence, ns: KadaXuanwu.UtilityDesigner.Scripts.Execution.Composites,
+        asm: UtilityDesigner}
+      data:
+        guid: d0dee92ef3033404982a43cfbee70624
+        position: {x: 424.66666, y: 338.66663}
+        notes: 
+        children:
+        - rid: 4608573912371167310
+        - rid: 4608573912371167311
+    - rid: 4608573912371167304
+      type: {class: Sequence, ns: KadaXuanwu.UtilityDesigner.Scripts.Execution.Composites,
+        asm: UtilityDesigner}
+      data:
+        guid: d0dee92ef3033404982a43cfbee70624
+        position: {x: 424.66666, y: 338.66663}
+        notes: 
+        children:
+        - rid: 4608573912371167312
+        - rid: 4608573912371167313
+    - rid: 4608573912371167305
+      type: {class: Sequence, ns: KadaXuanwu.UtilityDesigner.Scripts.Execution.Composites,
+        asm: UtilityDesigner}
+      data:
+        guid: d0dee92ef3033404982a43cfbee70624
+        position: {x: 424.66666, y: 338.66663}
+        notes: 
+        children:
+        - rid: 4608573912371167314
+    - rid: 4608573912371167306
+      type: {class: Sequence, ns: KadaXuanwu.UtilityDesigner.Scripts.Execution.Composites,
+        asm: UtilityDesigner}
+      data:
+        guid: d90a0536f0012c04c9a92d88cd4497ae
+        position: {x: 220.66669, y: 452}
+        notes: 
+        children:
+        - rid: 4608573912371167315
+        - rid: 4608573912371167316
+    - rid: 4608573912371167307
+      type: {class: Repeat, ns: KadaXuanwu.UtilityDesigner.Scripts.Execution.Decorators,
+        asm: UtilityDesigner}
+      data:
+        guid: eb9228081d15fb2489291893a6feccb0
+        position: {x: 771.3334, y: 516}
+        notes: 
+        child:
+          rid: 4608573912371167317
+    - rid: 4608573912371167308
+      type: {class: PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        guid: 3c556ad38f82d4245a9b68f7f3a0b5e1
+        position: {x: 374.6666, y: 481.61047}
+        notes: 
+    - rid: 4608573912371167309
+      type: {class: ChangeConsideration, ns: KadaXuanwu.UtilityDesigner.Scripts.Execution.Actions,
+        asm: UtilityDesigner}
+      data:
+        guid: ea8138408371dfd409964c8fd11dc100
+        position: {x: 574.6667, y: 456.0001}
+        notes: 
+        considerationSetName: Human needs
+        considerationName: Sleep
+        amount: -100
+    - rid: 4608573912371167310
+      type: {class: PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        guid: 3c556ad38f82d4245a9b68f7f3a0b5e1
+        position: {x: 374.6666, y: 481.61047}
+        notes: 
+    - rid: 4608573912371167311
+      type: {class: ChangeConsideration, ns: KadaXuanwu.UtilityDesigner.Scripts.Execution.Actions,
+        asm: UtilityDesigner}
+      data:
+        guid: ea8138408371dfd409964c8fd11dc100
+        position: {x: 574.6667, y: 456.0001}
+        notes: 
+        considerationSetName: Human needs
+        considerationName: Food
+        amount: -100
+    - rid: 4608573912371167312
+      type: {class: PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        guid: 3c556ad38f82d4245a9b68f7f3a0b5e1
+        position: {x: 374.6666, y: 481.61047}
+        notes: 
+    - rid: 4608573912371167313
+      type: {class: ChangeConsideration, ns: KadaXuanwu.UtilityDesigner.Scripts.Execution.Actions,
+        asm: UtilityDesigner}
+      data:
+        guid: ea8138408371dfd409964c8fd11dc100
+        position: {x: 574.6667, y: 456.0001}
+        notes: 
+        considerationSetName: Human needs
+        considerationName: Hygiene
+        amount: -100
+    - rid: 4608573912371167314
+      type: {class: PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        guid: 3c556ad38f82d4245a9b68f7f3a0b5e1
+        position: {x: 374.6666, y: 481.61047}
+        notes: 
+    - rid: 4608573912371167315
+      type: {class: PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        guid: c7273c31d8492d74c9a31a0f6d9a2344
+        position: {x: 119.33334, y: 590}
+        notes: 
+    - rid: 4608573912371167316
+      type: {class: ChangeConsideration, ns: KadaXuanwu.UtilityDesigner.Scripts.Execution.Actions,
+        asm: UtilityDesigner}
+      data:
+        guid: fd07e30d7d48daf42ab53547c1139785
+        position: {x: 279.66663, y: 590}
+        notes: 
+        considerationSetName: Human needs
+        considerationName: Toilet
+        amount: -100
+    - rid: 4608573912371167317
+      type: {class: Sequence, ns: KadaXuanwu.UtilityDesigner.Scripts.Execution.Composites,
+        asm: UtilityDesigner}
+      data:
+        guid: c8fd359aba2ba1f43b8e41bc88a25f6c
+        position: {x: 771.3334, y: 622.6667}
+        notes: 
+        children:
+        - rid: 4608573912371167318
+        - rid: 4608573912371167319
+        - rid: 4608573912371167320
+        - rid: 4608573912371167321
+    - rid: 4608573912371167318
+      type: {class: FindEntityOfType, ns: , asm: Assembly-CSharp}
+      data:
+        guid: 0510887829e6c0a43b3b2793c02fa1b6
+        position: {x: 515.3333, y: 724}
+        notes: 
+        typeToFind: 2
+    - rid: 4608573912371167319
+      type: {class: MoveToTarget, ns: , asm: Assembly-CSharp}
+      data:
+        guid: 5709114bbd7e5be448ab0e03894e441f
+        position: {x: 696.6667, y: 724}
+        notes: 
+    - rid: 4608573912371167320
+      type: {class: PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        guid: d9c30a444b1cd2b4691187bb2763f6ef
+        position: {x: 860.6667, y: 723.3334}
+        notes: 
+    - rid: 4608573912371167321
+      type: {class: UnlockState, ns: KadaXuanwu.UtilityDesigner.Scripts.Execution.Actions,
+        asm: UtilityDesigner}
+      data:
+        guid: 4cf501a44c64c914eaf93dff889a0126
+        position: {x: 1024, y: 724}
+        notes: 

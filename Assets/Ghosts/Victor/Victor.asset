@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b710439af2fa664099b256e502d6396, type: 3}
+  m_Name: Victor
+  m_EditorClassIdentifier: 
+  name: Boo
+  fetters: 03000000
+  prefab: {fileID: 6328172324908925464, guid: 2a9779eebe73d1a459d10174f5c56d31, type: 3}
+  abilityDatas:
+  - {fileID: 11400000, guid: cb677ed8cd0b4e44db17696b3c935491, type: 2}
+  - {fileID: 11400000, guid: 1477ba445e99b454a878ce9925d91112, type: 2}
+  abilities:
+  - name: Scream
+    requirements: 
+  - name: Spook
+    requirements: 
